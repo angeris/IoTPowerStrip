@@ -11,7 +11,7 @@ For more information about the Stanford IoT group, please visit the IoT website.
 
 ## Arduino
 
-This folder provides all of the Arduino code for the project. In general, this code should not be modified unless its being tailored to specific applications, or unless a patch is being submitted.
+This folder provides all of the Arduino code for the project. In general, this code should not be modified unless its being tailored to specific applications, or unless a patch is being submitted. Note that this is not being written using the Arduino IDE, but rather using the [PlatformIO](http://platformio.org/) manager/builder which is IDE-independent.
 
 ## PowerStripArduinoAPI
 
