@@ -1,0 +1,3 @@
+[submodule "Arduino/powerstrip_arduino_api"]
+	path = Arduino/powerstrip_arduino_api
+	url = https://github.com/danXyu/powerstrip_arduino_api.git
