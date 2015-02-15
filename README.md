@@ -18,4 +18,4 @@ This folder provides all of the Arduino code for the project. In general, this c
 Provides the API and a sample server.
 
 ## Contributors
-This project is currently being developed by Guillermo Angeris, Dan Yu, and Christopher Mehdi Elamri.
+This project is currently being developed by Guillermo Andres Angeris, Dan Yu, and Christopher Mehdi Elamri.
