@@ -21,7 +21,7 @@ in order to compile and run the code. Note also that this code will only work wi
 
 ## API
 
-Note that the API is currently not being hosted on this repository as there are issues with subprojects. This should be fixed soon, but in the meantime the Python sample server, client, and API is found in [Dan's Repository](https://github.com/danXyu/powerstrip_arduino_api).
+Note that the API is currently not being hosted on this repository as there are issues with subprojects. This should be fixed soon, but in the meantime the Python sample server, client, and API are found in [Dan's Repository](https://github.com/danXyu/powerstrip_arduino_api).
 
 ## Contributors
 This project is currently being developed by Guillermo Andres Angeris, Dan Yu, and Christopher Mehdi Elamri.
