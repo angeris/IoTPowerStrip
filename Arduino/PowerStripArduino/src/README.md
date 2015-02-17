@@ -18,7 +18,7 @@ Returns -1 if there is no ACK or if there is no +ok received. Otherwise returns 
 **Note:** You can only enable the command mode *once* every time the device is restarted.
 
 ## int initialize()
-Initializes the WiFi module directly to the command mode. Returns -1 if the command mode cannot be enabled.
+Initializes the WiFi module directly to the command mode. Returns -1 if the command mode cannot be enabled and 0, otherwise.
 
 
 # TODO

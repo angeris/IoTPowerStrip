@@ -2,12 +2,12 @@
 
 ## Overview
 
-This is a Smart Power Strip project for the Stanford IoT group, which aims to create a simple, relatively cheap interface for a power strip that can be home-built and is open source.
+This is a Smart Power Strip project for the Stanford IoT group, which aims to create a simple, relatively cheap interface for a power strip that can be home-built and is open source/open hardware.
 
 This repository provides a sample server in Python, an API, and the Arduino
 code for the project.
 
-For more information about the Stanford IoT group, please visit the IoT website.
+For more information about the Stanford IoT group, please visit the IoT website. Or email me at the email found on my profile.
 
 ## Arduino
 
@@ -17,7 +17,11 @@ To do so, go to the PowerStripArduino directory and type
 
     platformio run -t upload
 
-in order to compile and run the code. Note also that this code will only work with the Arduino Micro as it requires a second, dedicated serial RX/TX, which are found on pins 0 and 1 of the Micro.
+in order to compile and run the code. Additionally, if this is the first time that PlatformIO is run, then you will need to install Atmel's AVR platform. This can be done by the command
+
+    platformio install atmelavr
+
+Note also that this code will only work with the Arduino Micro as it requires a second, dedicated serial RX/TX, which are found on pins 0 and 1 of the Micro.
 
 ## API
 
