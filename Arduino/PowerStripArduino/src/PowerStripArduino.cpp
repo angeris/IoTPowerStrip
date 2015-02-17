@@ -1,5 +1,23 @@
 #include "Arduino.h"
 
+void commandMode() {
+	Serial1.write("+");
+	delay(50);
+	Serial1.write("+");
+	delay(50);
+	Serial1.write("+");
+	if(!Serial1.find("a")) {
+		Serial.println("No ack from WiFi module");
+		return;
+	}
+	Serial1.write("a");
+
+	if(!Serial1.find("+ok")) {
+		Serial.println("No ok received from WiFi module");
+		return;
+	}
+}
+
 void setup() {
 	// Begin both Serial ports (9600 for computer, 115200 for the
 	// wifi module.
@@ -9,13 +27,14 @@ void setup() {
 }
 
 void loop() {
-	if(Serial1.available()) {
-		//Output whatever was received from the WiFi module.
-		Serial.println(Serial1.read());
-	}
-
 	if(Serial.available()) {
-		Serial1.print("AT+PING=google.com");
+		if(Serial.find("1")) {
+			Serial.println("Command Received");
+			commandMode();
+			Serial1.write("AT+PING=192.168.0.1");
+		}
 	}
-	
+	if(Serial1.available()) {
+		Serial.write(Serial1.read());
+	}
 }
