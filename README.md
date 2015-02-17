@@ -23,9 +23,13 @@ in order to compile and run the code. Additionally, if this is the first time th
 
 Note also that this code will only work with the Arduino Micro as it requires a second, dedicated serial RX/TX, which are found on pins 0 and 1 of the Micro.
 
-## API
+## PowerStripTCPAPI 
 
-Note that the API is currently not being hosted on this repository as there are issues with subprojects. This should be fixed soon, but in the meantime the Python sample server, client, and API are found in [Dan's Repository](https://github.com/danXyu/powerstrip_arduino_api).
+This subproject contains the API (written in Python) for the PowerStrip project. It also contains a sample server, a sample client, and the whole reference for TCP commands over the net.
+
+## Contributions
+If you wish to contribute to the project, please feel free to fork the project and then issue a pull request. Of course, you will certainly be added to the list of contributors if your fork is pulled into the main branch.
 
 ## Contributors
-This project is currently being developed by Guillermo Andres Angeris, Dan Yu, and Christopher Mehdi Elamri.
+This project is currently being developed by Guillermo Andres Angeris, Dan Yu, and Christopher Mehdi Elamri of the Stanford IoT team.
+
