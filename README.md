@@ -11,11 +11,17 @@ For more information about the Stanford IoT group, please visit the IoT website.
 
 ## Arduino
 
-This folder provides all of the Arduino code for the project. In general, this code should not be modified unless its being tailored to specific applications, or unless a patch is being submitted. Note that this is not being written using the Arduino IDE, but rather using the [PlatformIO](http://platformio.org/) manager/builder which is IDE-independent.
+This folder provides all of the Arduino code for the project. In general, this code should not be modified unless its being tailored to specific applications, or unless a patch is being submitted. This project needs to be compiled with the [PlatformIO](http://platformio.org/) platform.
 
-## PowerStripArduinoAPI
+To do so, go to the PowerStripArduino directory and type
 
-Provides the API and a sample server.
+    platformio run -t upload
+
+in order to compile and run the code. Note also that this code will only work with the Arduino Micro as it requires a second, dedicated serial RX/TX, which are found on pins 0 and 1 of the Micro.
+
+## API
+
+Note that the API is currently not being hosted on this repository as there are issues with subprojects. This should be fixed soon, but in the meantime the Python sample server, client, and API is found in [Dan's Repository](https://github.com/danXyu/powerstrip_arduino_api).
 
 ## Contributors
 This project is currently being developed by Guillermo Andres Angeris, Dan Yu, and Christopher Mehdi Elamri.
