@@ -27,7 +27,7 @@ Note also that this code will only work with the Arduino Micro as it requires a 
 
 This subproject contains the API (written in Python) for the PowerStrip project. It also contains a sample server, a sample client, and the whole reference for TCP commands over the net.
 
-## Contributions
+## How to Contribute
 If you wish to contribute to the project, please feel free to fork the project and then issue a pull request. Of course, you will certainly be added to the list of contributors if your fork is pulled into the main branch.
 
 ## Contributors
